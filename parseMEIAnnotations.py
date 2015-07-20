@@ -45,8 +45,8 @@ class ParseMEIAnnotations(object):
             name = neume.attrib['name']
             ulx = int(zone.attrib['ulx'])
             uly = int(zone.attrib['uly'])
-            w = int(zone.attrib['lry']) - uly
-            h = int(zone.attrib['lrx']) - ulx
+            w = int(zone.attrib['lrx']) - ulx
+            h = int(zone.attrib['lry']) - uly
 
             page_data.append({
                 '@context': 'http://iiif.io/api/presentation/2/context.json',
